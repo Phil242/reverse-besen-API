@@ -17,6 +17,7 @@ CRC algorithm reversed and understood, but needs more checks
 Reversing the only available firmware for ARM board (unknown model)
 
 #### TODO:
+Understanding the Bluetooth pairing process (UDP ports numbering)
 What did the phone application sends to China ? (yes it does!)
 Various broadcasted packet to finish to understand
 Extract the current ESP32 firmware
