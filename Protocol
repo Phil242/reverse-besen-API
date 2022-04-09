@@ -83,8 +83,8 @@ Byte per byte :
 00
 07
 cc
-0f : BESEN protocol ? 0F 02 for start and stop charge
-02 : BESEN protocol ? 
+0f : * len 2
+02 : * Constant 0F02, BESEN protocol ?
 
 
 **************************************************************************************************
