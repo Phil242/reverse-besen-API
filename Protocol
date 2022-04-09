@@ -35,7 +35,7 @@ Byte per byte :
 80 : BESEN PROTOCOL ? 80 08 01 for STOP charge
 08 : BESEN PROTOCOL ? 
 01 : BESEN PROTOCOL ? 
-38 : start of charge ID ( format 8607714086786243 )
+38 : start of charge ID ( format 8600797985789243 )
 36
 30
 30
