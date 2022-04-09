@@ -7,20 +7,20 @@ The goal of this project is to understand the protocol between the wallbox and t
 # Status
 
 #### Ok:
-Understanding how the phone and the wallbox exchange data
-Replay successfully of a past charging command, with an old timestamp without modify it
-Stop charging command reversed
+- Understanding how the phone and the wallbox exchange data    
+- Replay successfully of a past charging command, with an old timestamp without modify it        
+- Stop charging command reversed      
 
 #### Progress:
-Start charging command reserve on the go
-CRC algorithm reversed and understood, but needs more checks
-Reversing the only available firmware for ARM board (unknown model)
+- Start charging command reserve on the go      
+- CRC algorithm reversed and understood, but needs more checks      
+- Reversing the only available firmware for ARM board (unknown model)       
 
 #### TODO:
-Understanding the Bluetooth pairing process (UDP ports numbering)
-What did the phone application sends to China ? (yes it does!)
-Various broadcasted packet to finish to understand
-Extract the current ESP32 firmware
+- Understanding the Bluetooth pairing process (UDP ports numbering)     
+- What did the phone application sends to China ? (yes it does!) 
+- Various broadcasted packet to finish to understand   
+- Extract the current ESP32 firmware    
 
 # Contact us!
-Feel free to reach us, we need you!
+Feel free to reach us, we need you!       
