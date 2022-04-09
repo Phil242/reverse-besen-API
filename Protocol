@@ -26,12 +26,12 @@ Byte per byte :
 21 :   *
 95 :   *
 13 :   * device serial number (as accessible in APP, About charger, Device Number OR on WB screen)
-31 : 1st byte password (here 123456)
-32 : 2nd byte password
-33 : 3rd byte password
-34 : 4th byte password
-35 : 5th byte password
-36 : 6th byte password
+31 : * len 6:
+32 : *
+33 : *
+34 : *
+35 : *
+36 : * password (here 123456)
 80 : BESEN PROTOCOL ? 80 08 01 for STOP charge
 08 : BESEN PROTOCOL ? 
 01 : BESEN PROTOCOL ? 
