@@ -32,9 +32,9 @@ Byte per byte :
 34 : 4th byte password
 35 : 5th byte password
 36 : 6th byte password
-80
-08
-01
+80 : BESEN PROTOCOL ? 80 08 01 for STOP charge
+08 : BESEN PROTOCOL ? 
+01 : BESEN PROTOCOL ? 
 38 : start of charge ID ( format 8607714086786243 )
 36
 30
@@ -83,8 +83,8 @@ Byte per byte :
 00
 07
 cc
-0f
-02
+0f : BESEN protocol ? 0F 02 for start and stop charge
+02 : BESEN protocol ? 
 
 
 **************************************************************************************************
