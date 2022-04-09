@@ -13,12 +13,12 @@ WB Florent
 
 Byte per byte :
 
-06
-01
-00
-48 : length including 06 01 00
-00 : reserved
-91 : begin of device number, as accessible in APP, About charger, Device Number
+06 : * len 2
+01 : * Constant 0601, BESEN protocol ?
+00 :   * len 2
+48 :   * packet length, from the begining (including 06 01 ...)
+00 : * reserved ?
+91 :   * begin of device number, as accessible in APP, About charger, Device Number
 81
 10
 27
