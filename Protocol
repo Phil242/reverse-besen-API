@@ -25,7 +25,7 @@ Byte per byte :
 21
 95
 13
-31 : 1st byte password
+31 : 1st byte password (here 123456)
 32 : 2nd byte password
 33 : 3rd byte password
 34 : 4th byte password
@@ -34,22 +34,22 @@ Byte per byte :
 80
 08
 01
-38
+38 : start of charge ID ( format 8607714086786243 )
 36
 30
 30
-37
+37 : follow of charge id  797985 ??
 39
 37
 39
 38
 35
-37
-38
-39
-32
-34
-33
+37 : 1st byte User Id, as we find it in "My records, last column" in the APP (here 786243)
+38 : User Id
+39 : User Id
+32 : User Id
+34 : User Id
+33 : User Id
 00
 00
 00
@@ -84,6 +84,7 @@ Byte per byte :
 cc
 0f
 02
+
 
 **************************************************************************************************
 Command: Start Charging
