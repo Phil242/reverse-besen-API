@@ -1,8 +1,8 @@
 # The project
 
-The BESEN wallbox is one of the cheapest on the market. But it’s maybe the less supported one.
-The wallbox is only manageable by an Android or iOS application. Witch is buggier than a first-year student project.
-The goal of this project is to understand the protocol between the wallbox and the phone application to opensource the API.
+The BESEN wallbox is one of the cheapest on the market. But it’s maybe the less supported one.      
+The wallbox is only manageable by an Android or iOS application. Witch is buggier than a first-year student project.       
+The goal of this project is to understand the protocol between the wallbox and the phone application to opensource the API.      
 
 # Status
 
