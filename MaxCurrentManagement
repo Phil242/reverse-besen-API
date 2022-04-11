@@ -21,7 +21,12 @@ https://openev.freshdesk.com/support/solutions/articles/6000052074-basics-of-sae
 
 Very nice video : https://www.youtube.com/watch?v=xNEU7blg8JE&ab_channel=OpenEVSE
 
-So seems the Max current is always signaled in the line, it is really intended to be changed live.
+this is the Black line in the Morec Open video : https://yewtu.be/watch?v=zJBYlwVsDak
+
+
+SUMMARY : 
+
+So the Max current is always signaled in the line, it is really intended to be changed live.
 
 Currently if we try to start a new charging session, with an updated max current, it is ignored. The idea would be to patch the
 Morec Firmware to allow to set this max current, as done today at charging start only.
