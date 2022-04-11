@@ -167,7 +167,7 @@ ff : * ?
 ff : * ?
 10 :   * Intensity of the charge, here 0x10 = 16A
 13 : * len2
-0c : * custom checksul
+0c : * custom checksum
 0f :   * len 2
 02 :   * Constant 0F02, BESEN custom protocol
 
