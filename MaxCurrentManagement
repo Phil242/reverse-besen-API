@@ -20,3 +20,9 @@ https://openev.freshdesk.com/support/solutions/articles/6000052070-theory-of-ope
 https://openev.freshdesk.com/support/solutions/articles/6000052074-basics-of-sae-j1772
 
 Very nice video : https://www.youtube.com/watch?v=xNEU7blg8JE&ab_channel=OpenEVSE
+
+So seems the Max current is always signaled in the line, it is really intended to be changed live.
+
+Currently if we try to start a new charging session, with an updated max current, it is ignored. The idea would be to patch the
+Morec Firmware to allow to set this max current, as done today at charging start only.
+TO BE CHECKED how to manage limitation coming from the cable.
