@@ -2,7 +2,12 @@
 
 The BESEN wallbox is one of the cheapest on the market. But it’s maybe the less supported one.      
 The wallbox is only manageable by an Android or iOS application. Witch is buggier than a first-year student project.       
-The goal of this project is to understand the protocol between the wallbox and the phone application to opensource the API.      
+The goal of this project is to understand the protocol between the wallbox and the phone application to opensource the API.
+
+Being able to automatise start, stop charging and changing max current will allow to be integrated Domotic systems. 
+It will allow to implement nice features like curtailment (when domestic max power is limited) and also photovoltaic production optimal usage.
+The idea is to propose different charging modes (minimise grid usage, allow grid usage, max booost,...)
+For the last two feature this would be done with the help of specialised software, like Home Assistant      
 
 # Status
 
@@ -10,6 +15,7 @@ The goal of this project is to understand the protocol between the wallbox and t
 - Understanding how the phone and the wallbox exchange data    
 - Replay successfully a past charging command, with an old timestamp without modify it        
 - Stop charging command reversed      
+- Analysed SAE J1772 max control pilot usage for max current.
 
 #### Progress:
 - Start charging command reserve on the go      
