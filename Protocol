@@ -14,6 +14,15 @@ Checksum is stored in Big Endian.
 
 
 **************************************************************************************************
+client_ID
+**************************************************************************************************
+
+The 8 digits client_ID is random, one per application.
+BUT! The first byte is always 86, and the last observed to be 43 (most) or 44 (rare).
+(badly designed random générator?)
+
+
+**************************************************************************************************
 Command: Stop Charging
 **************************************************************************************************
 
@@ -132,7 +141,7 @@ WB Phil, byte per byte:
 36 : * password (here 123456)
 80 :   * len 3
 07 :   *
-01 :   * Besen command: Start charging
+01 :   * Besen command: Start charging, 800701
 38 : * len 16
 36 : *
 30 : *
