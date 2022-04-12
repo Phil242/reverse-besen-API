@@ -7,7 +7,8 @@ The goal of this project is to understand the protocol between the wallbox and t
 Being able to automatise start, stop charging and changing max current will allow to be integrated Domotic systems. 
 It will allow to implement nice features like curtailment (when domestic max power is limited) and also photovoltaic production optimal usage.
 The idea is to propose different charging modes (minimise grid usage, allow grid usage, max booost,...)
-For the last two feature this would be done with the help of specialised software, like Home Assistant      
+For the last two feature this would be done with the help of specialised software, like Home Assistant. 
+See for example https://community.home-assistant.io/t/wallbox-pulsar-plus-integration/200339   
 
 # Status
 
