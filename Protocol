@@ -81,8 +81,8 @@ Byte per byte :
 00
 00
 00
-07
-cc
+07 : * len 2
+cc : custom checksum see https://github.com/Phil242/reverse-besen-API/tree/main/Checksum 
 0f : * len 2
 02 : * Constant 0F02, BESEN protocol ?
 
@@ -165,9 +165,9 @@ ff : * ?
 ff : * ?
 ff : * ?
 ff : * ?
-10 :   * Intensity of the charge, here 0x10 = 16A
+10 :   * Max Current of the charge, here 0x10 = 16A
 13 : * len2
-0c : * custom checksum
+0c : * custom checksum see https://github.com/Phil242/reverse-besen-API/tree/main/Checksum
 0f :   * len 2
 02 :   * Constant 0F02, BESEN custom protocol
 
