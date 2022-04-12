@@ -2,7 +2,7 @@ Interest for Morec Wallbox For off loading and Photovoltaic production tracking.
 
 Currently Morec Wallbox allows to set the max current, but only at starting charge.
 For off loading in case of excess, this could be acceptable to stop the charge, but for Photovoltaic production, this is not possible.
-This would be an over use of the Realy, and would wear it very fast. 
+This would be an over use of the Relay, and would wear it very fast. 
 
 A typical load for a 5kw PV would imply chanding 16 times the max current of the WB.
 
@@ -14,6 +14,7 @@ Let's go back to Charging Protocol and how WB control max current.
 I found interesing information there : 
 https://community.openenergymonitor.org/t/integrate-a-openevse-charging-station-with-a-9kwp-solar-system/11018
 
+https://www.lib.must.edu.tw/TCT/SAE%20J1772-2010.pdf
 
 https://openev.freshdesk.com/support/solutions/articles/6000052070-theory-of-operation
 
