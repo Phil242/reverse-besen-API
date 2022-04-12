@@ -16,11 +16,11 @@ See for example https://community.home-assistant.io/t/wallbox-pulsar-plus-integr
 - Understanding how the phone and the wallbox exchange data    
 - Replay successfully a past charging command, with an old timestamp without modifying it        
 - Stop charging command has been reversed engineered  
-- Analysed SAE J1772 max control pilot usage for max current.
+- CRC algorithm reversed, understood and implemented
+- Analysed SAE J1772 max control pilot usage for max current
 
 #### In Progress:
 - Start charging command reserve on the go      
-- CRC algorithm reversed and understood, but needs more checks      
 - Reversing the only available firmware for ARM board (unknown model)       
 
 #### TODO:

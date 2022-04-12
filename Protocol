@@ -1,5 +1,18 @@
 This the UDP protocol of Besen WB with APP
 
+
+**************************************************************************************************
+Packet checksum
+**************************************************************************************************
+
+Each UDP packets have a checksum at the end, stored before the 2 last constant bytes.
+The algorithm is quite simple (and scary!):     
+You just need to add each byte of the packet, byte per byte, from the first 0601… to the last byte before the checksum.        
+Each round you need to do a modulus 0X10000 to be sure the sum didn’t go behind 16 bits. And that’s it!
+See the C code example in the folder Checksum.
+Checksum is stored in Big Endian.
+
+
 **************************************************************************************************
 Command: Stop Charging
 **************************************************************************************************
