@@ -8,7 +8,7 @@ The goal of this project is to understand the protocol between the wallbox and t
 
 #### Ok:
 - Understanding how the phone and the wallbox exchange data    
-- Replay successfully of a past charging command, with an old timestamp without modify it        
+- Replay successfully a past charging command, with an old timestamp without modify it        
 - Stop charging command reversed      
 
 #### Progress:
