@@ -1,5 +1,27 @@
 This the UDP protocol of Besen WB with APP
 
+
+**************************************************************************************************
+Packet checksum
+**************************************************************************************************
+
+Each UDP packets have a checksum at the end, stored before the 2 last constant bytes.
+The algorithm is quite simple (and scary!):     
+You just need to add each byte of the packet, byte per byte, from the first 0601… to the last byte before the checksum.        
+Each round you need to do a modulus 0X10000 to be sure the sum didn’t go behind 16 bits. And that’s it!
+See the C code example in the folder Checksum.
+Checksum is stored in Big Endian.
+
+
+**************************************************************************************************
+client_ID
+**************************************************************************************************
+
+The 8 digits client_ID is random, one per application.
+BUT! The first byte is always 86, and the last observed to be 43 (most) or 44 (rare).
+(badly designed random générator?)
+
+
 **************************************************************************************************
 Command: Stop Charging
 **************************************************************************************************
@@ -119,7 +141,7 @@ WB Phil, byte per byte:
 36 : * password (here 123456)
 80 :   * len 3
 07 :   *
-01 :   * Besen command: Start charging
+01 :   * Besen command: Start charging, 800701
 38 : * len 16
 36 : *
 30 : *
