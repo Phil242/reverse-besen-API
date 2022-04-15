@@ -54,25 +54,25 @@ Byte per byte :
 34 : *
 35 : *
 36 : * password, ASCII (here 123456)
-80 : BESEN PROTOCOL ? 80 08 01 for STOP charge
-08 : BESEN PROTOCOL ? 
-01 : BESEN PROTOCOL ? 
-38 : start of charge ID ( format 8600797985789243 )
-36
-30
-30
-37 : follow of charge id  797985 ??
-39
-37
-39
-38
-35
-37 : 1st byte User Id, as we find it in "My records, last column" in the APP (here 786243)
-38 : User Id
-39 : User Id
-32 : User Id
-34 : User Id
-33 : User Id
+80 :   * BESEN PROTOCOL 80 08 01 for STOP charge
+08 :   * BESEN PROTOCOL
+01 :   * BESEN PROTOCOL
+38 : * len 16: 
+36 : *
+30 : *
+30 : *
+37 : *
+39 : *
+37 : *
+39 : *
+38 : *
+35 : *
+37 : * last 6 : "My records, last column "user" in the APP (here 786243)
+38 : *
+39 : *
+32 : *
+34 : *
+33 : * begining of APP_smartphone_ID ( format 8600797985789243 )
 00
 00
 00
@@ -104,7 +104,7 @@ Byte per byte :
 00
 00
 07 : * len 2
-cc : custom checksum 
+cc : * custom checksum 
 0f : * len 2
 02 : * Constant 0F02, BESEN protocol ?
 
