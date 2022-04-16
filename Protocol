@@ -19,13 +19,14 @@ client_ID
 
 The 8 digits client_ID is random, one per application.
 BUT! The first byte is always 86, and the last observed to be 43 (most) or 44 (rare).
-(badly designed random générator?)
+(badly designed random generator?)
 
 
 **************************************************************************************************
 Command: Stop Charging
 **************************************************************************************************
 
+Sniffed packets:
 WB Phil
 06 01 00 48 00 91 81 10 27 51 21 95 13 31 32 33 34 35 36 80 08 01 38 36 30 30 37 39 37 39 38 35 37 38 39 32 34 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 cc 0f 02
 
@@ -39,7 +40,7 @@ Byte per byte :
 01 : * Constant 0601, BESEN custom protocol
 00 :   * len 2:
 48 :   * packet length, from the begining (including 06 01 ...)
-00 : * reserved ?
+00 : * reserved 00 ?
 91 :   * len 8:
 81 :   *
 10 :   *
@@ -54,9 +55,9 @@ Byte per byte :
 34 : *
 35 : *
 36 : * password, ASCII (here 123456)
-80 :   * BESEN PROTOCOL 80 08 01 for STOP charge
-08 :   * BESEN PROTOCOL
-01 :   * BESEN PROTOCOL
+80 :   * len 3:
+08 :   *
+01 :   * BESEN custom protocol 800801: STOP charge
 38 : * len 16: 
 36 : *
 30 : *
@@ -72,7 +73,7 @@ Byte per byte :
 39 : *
 32 : *
 34 : *
-33 : * begining of APP_smartphone_ID ( format 8600797985789243 )
+33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app.
 00
 00
 00
@@ -106,7 +107,7 @@ Byte per byte :
 07 : * len 2
 cc : * custom checksum 
 0f : * len 2
-02 : * Constant 0F02, BESEN protocol ?
+02 : * Constant 0F02, BESEN custom protocol
 
 
 **************************************************************************************************
@@ -141,14 +142,14 @@ WB Phil, byte per byte:
 36 : * password (here 123456)
 80 :   * len 3
 07 :   *
-01 :   * Besen command: Start charging, 800701
+01 :   * BESEN custom protocol 800701: START charge
 38 : * len 16
 36 : *
 30 : *
 30 : *
 37 : *
 39 : *
-37 : *
+37 : * last 6 : "My records, last column "user" in the APP (here 786243)
 39 : *
 38 : *
 35 : *
@@ -157,7 +158,7 @@ WB Phil, byte per byte:
 39 : *
 32 : *
 34 : *
-33 : * client_ID (in ASCII) ?
+33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app.
 31 :   * len 16
 36 :   *
 34 :   *
@@ -174,7 +175,7 @@ WB Phil, byte per byte:
 30 :   *
 39 :   *
 36 :   * timestamp EPOQ format (in ASCII)
-00 : * len 5 ?
+00 : * len 5: ?
 62 : *
 50 : *
 5c : *
