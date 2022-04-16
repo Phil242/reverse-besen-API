@@ -73,7 +73,7 @@ Byte per byte :
 39 : *
 32 : *
 34 : *
-33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app.
+33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app (in ASCII)
 00
 00
 00
@@ -159,7 +159,7 @@ WB Phil, byte per byte:
 32 : *
 34 : *
 33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app.
-31 :   * len 16
+31 :   * len 10
 36 :   *
 34 :   *
 39 :   *
@@ -168,20 +168,20 @@ WB Phil, byte per byte:
 35 :   *
 34 :   *
 32 :   *
-31 :   *
-32 :   *
-38 :   *
-38 :   *
-30 :   *
-39 :   *
-36 :   * timestamp EPOQ format (in ASCII)
-00 : * len 5: ?
-62 : *
-50 : *
-5c : *
-dd : * another timestamp (last 2 bytes give the seconds beetween 2 charges)
-01 :   * ?
-01 :   * ?
+31 :   * timestamp EPOQ format (in ASCII)
+32 : * len 6: ?
+38 : *
+38 : *
+30 : *
+39 : *
+36 : * 6 digits decimal number, looks random (in ASCII)
+00 :   * len 5: ?
+62 :   *
+50 :   *
+5c :   *
+dd :   * another timestamp (last 2 bytes give the seconds beetween 2 charges)
+01 : * ?
+01 : * ?
 ff : * ?
 ff : * ?
 ff : * ?
