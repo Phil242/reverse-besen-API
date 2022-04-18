@@ -55,25 +55,25 @@ Byte per byte :
 34 : *
 35 : *
 36 : * password, ASCII (here 123456)
-80 :   * len 3:
-08 :   *
-01 :   * BESEN custom protocol 800801: STOP charge
-38 : * len 16: 
-36 : *
-30 : *
-30 : *
-37 : *
-39 : *
-37 : *
-39 : *
-38 : *
-35 : *
-37 : * last 6 : "My records, last column "user" in the APP (here 786243)
-38 : *
-39 : *
-32 : *
-34 : *
-33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app (in ASCII)
+80 :   * len 2:
+08 :   * BESEN custom protocol 8008: STOP charge
+01 : * ?
+38 :   * len 16: 
+36 :   *
+30 :   *
+30 :   *
+37 :   *
+39 :   *
+37 :   *
+39 :   *
+38 :   *
+35 :   *
+37 :   * last 6 : "My records, last column "user" in the APP (here 786243)
+38 :   *
+39 :   *
+32 :   *
+34 :   *
+33 :   * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app (in ASCII)
 00
 00
 00
@@ -140,57 +140,57 @@ WB Phil, byte per byte:
 34 : *
 35 : *
 36 : * password (here 123456)
-80 :   * len 3
-07 :   *
-01 :   * BESEN custom protocol 800701: START charge
-38 : * len 16
-36 : *
-30 : *
-30 : *
-37 : *
-39 : *
-37 : * last 6 : "My records, last column "user" in the APP (here 786243)
-39 : *
-38 : *
-35 : *
-37 : *
-38 : *
-39 : *
-32 : *
-34 : *
-33 : * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app.
-31 :   * len 10
+80 :   * len 2
+07 :   * BESEN custom protocol 8007: START charge
+01 : * ?
+38 :   * len 16
 36 :   *
-34 :   *
+30 :   *
+30 :   *
+37 :   *
 39 :   *
-34 :   *
+37 :   * last 6 : "My records, last column "user" in the APP (here 786243)
+39 :   *
+38 :   *
 35 :   *
-35 :   *
-34 :   *
+37 :   *
+38 :   *
+39 :   *
 32 :   *
-31 :   * timestamp EPOQ format (in ASCII)
-32 : * len 6: ?
-38 : *
-38 : *
-30 : *
+34 :   *
+33 :   * client_ID (one different ID on each smartphone) format 8600797985789243, only last 6 bytes displayed on app.
+31 : * len 10
+36 : *
+34 : *
 39 : *
-36 : * 6 digits decimal number, looks random (in ASCII)
-00 :   * len 5: ?
-62 :   *
-50 :   *
-5c :   *
-dd :   * another timestamp (last 2 bytes give the seconds beetween 2 charges)
-01 : * ?
-01 : * ?
-ff : * ?
-ff : * ?
-ff : * ?
-ff : * ?
-ff : * ?
-ff : * ?
-10 :   * Max Current of the charge, here 0x10 = 16A
-13 : * len2
-0c : * custom checksum
-0f :   * len 2
-02 :   * Constant 0F02, BESEN custom protocol
+34 : *
+35 : *
+35 : *
+34 : *
+32 : *
+31 : * timestamp EPOQ format (in ASCII)
+32 :   * len 6: ?
+38 :   *
+38 :   *
+30 :   *
+39 :   *
+36 :   * 6 digits decimal number, looks random (in ASCII)
+00 : * len 5: ?
+62 : *
+50 : *
+5c : *
+dd : * another timestamp (last 2 bytes give the seconds beetween 2 charges)
+01 :   * ?
+01 :   * ?
+ff :   * ?
+ff :   * ?
+ff :   * ?
+ff :   * ?
+ff :   * ?
+ff :   * ?
+10 : * Max Current of the charge, here 0x10 = 16A
+13 :   * len2
+0c :   * custom checksum
+0f : * len 2
+02 : * Constant 0F02, BESEN custom protocol
 
