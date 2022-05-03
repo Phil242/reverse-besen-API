@@ -2,7 +2,7 @@
 
 The BESEN wallbox is one of the cheapest on the market. But it’s maybe the less supported one.      
 The wallbox is only manageable by an application which is available for IOS and Android. it is buggier than a first-year student project.       
-The goal of this project is to reverse engineer wallbox to understand the protocol that is being used between the wallbox and the phone application in order to create a opensource API.
+The goal of this project is to reverse engineer wallbox to understand the protocol that is being used between the wallbox and the phone application in order to create an opensource API.
 
 Being able to automatise start, stop charging and changing max current will allow to be integrated into domestic automation systems. 
 It will allow to implement nice features like curtailment (when domestic max power is limited) and/or photovoltaic production optimal usage.
